@@ -1,35 +1,50 @@
 body {
+    --text: #eee;
+    --background: #222;
+    --background-card: #111;
+    --background-card-border: #010101;
+    --text-size-english: 33px;
+    --text-size-brazilian: 24px;
+
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-color: var(--background);
+}
+
+* {
+    color: var(--text);
 }
 
 #flashcard {
-    width: 300px;
-    height: 200px;
-    background-color: #ffffff;
-    border: 1px solid #000;
+    width: 500px;
+    height: 300px; /* Adicione uma altura explícita */
+    background-color: var(--backgroundD);
+    border: var(--background-card-border) 1px solid;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    border-radius: 20px;
 }
 
 .card-content {
-    display: none;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
+
 }
 
 #card-english {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: var(--text-size-english);
+    font-weight: bolder;
 }
 
 #card-translation {
-    font-size: 18px;
+    font-size: var(--text-size-brazilian);
+    height: 24px;
+}
+.space {
+    height: 50px;
 }
