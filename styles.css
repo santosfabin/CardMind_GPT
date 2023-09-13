@@ -20,9 +20,9 @@ body {
 }
 
 #flashcard {
-    width: 500px;
-    height: 300px; /* Adicione uma altura explícita */
-    background-color: var(--backgroundD);
+    width: 450px;
+    height: 250px; /* Adicione uma altura explícita */
+    background-color: var(--background-card);
     border: var(--background-card-border) 1px solid;
     display: flex;
     align-items: center;
